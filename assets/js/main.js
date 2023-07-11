@@ -253,3 +253,19 @@
   new PureCounter();
 
 })()
+
+// dynamic age
+let age, current_date, year, month
+month = 3
+year = 1996
+
+current_date = new Date()
+
+if (current_date.getMonth() > 3) {
+  age = current_date.getFullYear() - year
+  document.getElementById('my-age').innerHTML = age
+}
+else {
+  age = current_date.getFullYear() - year - 1
+  document.getElementById('my-age').innerHTML = age
+}
